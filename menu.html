@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Меню — Кафе «Хруст & Вкус»</title>
+  <link rel="stylesheet" href="menu.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="menu.html">Меню</a></li>
+        <li><a href="index.html#booking">Бронирование</a></li>
+        <li><a href="index.html#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+    <h1>Меню кафе «Хруст & Вкус»</h1>
+  </header>
+
+  <!-- Фильтр по категориям -->
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">Все</button>
+    <button class="filter-btn" data-filter="starter">Закуски</button>
+    <button class="filter-btn" data-filter="main">Основные</button>
+    <button class="filter-btn" data-filter="dessert">Десерты</button>
+  </div>
+
+  <section class="menu-section">
+    <div class="menu-items">
+      <!-- Закуски -->
+      <div class="menu-item" data-category="starter">
+        <img src="images/bruschetta.jpg" alt="Брускетта" />
+        <h3>Брускетта</h3>
+        <p>Хрустящий хлеб с томатами, базиликом и оливковым маслом.</p>
+        <p class="price">45 000 сум</p>
+      </div>
+
+      <div class="menu-item" data-category="starter">
+        <img src="images/cheese_plate.jpg" alt="Сырная тарелка" />
+        <h3>Сырная тарелка</h3>
+        <p>Ассорти из свежих сыров с орехами и мёдом.</p>
+        <p class="price">70 000 сум</p>
+      </div>
+
+      <div class="menu-item" data-category="starter">
+        <img src="images/spicy_olives.jpg" alt="Оливки">
+         <h3>Оливки в пряном маринаде</h3>
+          <p>Микс зелёных и чёрных оливок, замаринованных в травах и чесноке.</p>
+             <p class="price">35 000 сум</p>
+          </div>
+
+          <div class="menu-item" data-category="starter">
+  <img src="images/mini_quesadilla.jpg" alt="Кесадильи">
+  <h3>Мини-кесадильи с сыром</h3>
+  <p>Хрустящие лепёшки с расплавленным сыром, подаются с соусом.</p>
+  <p class="price">40 000 сум</p>
+</div>
+
+<div class="menu-item" data-category="starter">
+  <img src="images/spring_rolls.jpg" alt="Спринг-роллы">
+  <h3>Спринг-роллы с овощами</h3>
+  <p>Свежие овощи в рисовой бумаге с кисло-сладким соусом.</p>
+  <p class="price">42 000 сум</p>
+</div>
+
+<div class="menu-item" data-category="starter">
+  <img src="images/hummus.jpg" alt="Хумус с питой" />
+  <h3>Хумус с питой</h3>
+  <p>Кремовый хумус из нута с оливковым маслом и свежей тёплой питой.</p>
+  <p class="price">38 000 сум</p>
+</div>
+
+
+      <!-- Основные блюда -->
+      <div class="menu-item" data-category="main">
+        <img src="images/chicken_stew.jpg" alt="Куриное рагу" />
+        <h3>Куриное рагу</h3>
+        <p>Нежное куриное мясо с овощами и ароматными травами.</p>
+        <p class="price">90 000 сум</p>
+      </div>
+
+      <div class="menu-item" data-category="main">
+        <img src="images/pasta.jpg" alt="Паста с соусом" />
+        <h3>Паста с соусом</h3>
+        <p>Паста с томатным соусом и пармезаном.</p>
+        <p class="price">80 000 сум</p>
+      </div>
+
+      <div class="menu-item" data-category="main">
+  <img src="images/beef_steak.jpg" alt="Стейк из говядины">
+  <h3>Стейк из говядины</h3>
+  <p>Сочный стейк средней прожарки с картофельным пюре и соусом демиглас.</p>
+  <p class="price">120 000 сум</p>
+</div>
+
+<div class="menu-item" data-category="main">
+  <img src="images/grilled_salmon.jpg" alt="Лосось на гриле">
+  <h3>Лосось на гриле</h3>
+  <p>Филе лосося, приготовленное на гриле, подаётся с овощами на пару.</p>
+  <p class="price">110 000 сум</p>
+</div>
+
+<div class="menu-item" data-category="main">
+  <img src="images/mushroom_risotto.jpg" alt="Ризотто с грибами">
+  <h3>Ризотто с грибами</h3>
+  <p>Кремовое ризотто с белыми грибами и пармезаном.</p>
+  <p class="price">85 000 сум</p>
+</div>
+
+<div class="menu-item" data-category="main">
+  <img src="images/eastern_plov.jpg" alt="Плов по-восточному" />
+  <h3>Плов по-восточному</h3>
+  <p>Ароматный рис с говядиной, морковью и специями, подаётся с салатом.</p>
+  <p class="price">95 000 сум</p>
+</div>
+
+
+
+
+
+      <!-- Десерты -->
+      <div class="menu-item" data-category="dessert">
+        <img src="images/tiramisu.jpg" alt="Тирамису" />
+        <h3>Тирамису</h3>
+        <p>Классический итальянский десерт с маскарпоне и кофе.</p>
+        <p class="price">50 000 сум</p>
+      </div>
+
+      <div class="menu-item" data-category="dessert">
+        <img src="images/cheesecake.jpg" alt="Чизкейк" />
+        <h3>Чизкейк</h3>
+        <p>Нежный чизкейк с ягодным соусом.</p>
+        <p class="price">55 000 сум</p>
+      </div>
+    
+
+    <div class="menu-item" data-category="dessert">
+  <img src="images/choco_fondant.jpg" alt="Шоколадный фондан">
+  <h3>Шоколадный фондан</h3>
+  <p>Тёплый шоколадный кекс с жидкой начинкой и шариком ванильного мороженого.</p>
+  <p class="price">58 000 сум</p>
+</div>
+
+<div class="menu-item" data-category="dessert">
+  <img src="images/panna_cotta.jpg" alt="Панна-котта">
+  <h3>Панна-котта с клубничным соусом</h3>
+  <p>Нежный сливочный десерт в итальянском стиле с ароматным соусом из клубники.</p>
+  <p class="price">48 000 сум</p>
+</div>
+
+<div class="menu-item" data-category="dessert">
+  <img src="images/creme_brulee.jpg" alt="Крем-брюле">
+  <h3>Крем-брюле</h3>
+  <p>Французский десерт с хрустящей карамельной корочкой и ванильным кремом внутри.</p>
+  <p class="price">52 000 сум</p>
+</div>
+
+<div class="menu-item" data-category="dessert">
+  <img src="images/apple_strudel.jpg" alt="Яблочный штрудель">
+  <h3>Яблочный штрудель</h3>
+  <p>Тонкое тесто с яблоками, корицей и изюмом, подаётся с шариком мороженого.</p>
+  <p class="price">50 000 сум</p>
+</div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Подключаем JS -->
+  <script src="menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — Кафе «Хруст & Вкус»</title>
+    <link rel="stylesheet" href="contacts.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="menu.html">Меню</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <h1>Контакты</h1>
+    </header>
+
+    <section class="contact-section">
+        <div class="contact-info">
+            <h2>Свяжитесь с нами</h2>
+            <p><strong>Адрес:</strong> г. Ташкент, ул. Вкусная, 12</p>
+            <p><strong>Телефон:</strong><a href="tel:+998970594049">+998 (97) 059-40-49</a></p>
+            <p><strong>Время работы:</strong> Пн–Вс: 09:00 — 23:00</p>
+        </div>
+
+        <div class="map">
+            <!--Google Map Embed-->
+            <iframe
+             src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="300" style="border:0" allowfullscreen loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2>Напишите нам</h2>
+        <form id="feedback-form">
+            <input type="text" name="name" placeholder="Ваще имя" required>
+            <input type="tel" name="phone" placeholder="Номер телефона" required>
+            <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+        <p id="form-status"></p>
+    </section>
+    <script src="form.js"></script>
+</body>
+</html>
